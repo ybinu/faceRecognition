@@ -1,45 +1,45 @@
-»·¾³£ºwin10   python3.8
-1.ÏÂÔØ£º
-http://dlib.net/   (ÎÒÓÃµÄÊÇ19.19)
+ç¯å¢ƒï¼šwin10   python3.8
+1.ä¸‹è½½ï¼š
+http://dlib.net/   (æˆ‘ç”¨çš„æ˜¯19.19)
 https://cmake.org
 
-2.ÏÂÔØNVIDIA ÏÔ¿¨Çı¶¯ cuda cudnn  °²×°
-Ò»ÂÉ×îĞÂµÄ£¨CUDA Toolkit 10.2   Download cuDNN v7.6.5 (November 18th, 2019), for CUDA 10.2£©
+2.ä¸‹è½½NVIDIA æ˜¾å¡é©±åŠ¨ cuda cudnn  å®‰è£…
+ä¸€å¾‹æœ€æ–°çš„ï¼ˆCUDA Toolkit 10.2   Download cuDNN v7.6.5 (November 18th, 2019), for CUDA 10.2ï¼‰
 https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal
 https://developer.nvidia.com/rdp/cudnn-download
 
-Èç¹ûcuda°²×°±¨´í£¬È¥µô È¡ÏûµôCUDAÀïVisual Studio IntegrationÇ°µÄ¡Ì
+å¦‚æœcudaå®‰è£…æŠ¥é”™ï¼Œå»æ‰ å–æ¶ˆæ‰CUDAé‡ŒVisual Studio Integrationå‰çš„âˆš
 
-visual studio  ÕâÀïÎÒÓÃµÄ2019ÉçÇø°æ
-°²×°ÖĞ  cmake ±¨´í¼ÓÉÏ  CMake¹¤¾ßºÍ  msbulid
-²Î¿¼https://www.jianshu.com/p/8ba3401f610b
+visual studio  è¿™é‡Œæˆ‘ç”¨çš„2019ç¤¾åŒºç‰ˆ
+å®‰è£…ä¸­  cmake æŠ¥é”™åŠ ä¸Š  CMakeå·¥å…·å’Œ  msbulid
+å‚è€ƒhttps://www.jianshu.com/p/8ba3401f610b
 
-ÆäËûÒ»ÂÉÎŞÄÔÏÂÒ»²½
+å…¶ä»–ä¸€å¾‹æ— è„‘ä¸‹ä¸€æ­¥
 
-°ÑcmakeµÄÂ·¾¶¼ÓÈëpath
-Ö´ĞĞ£ºpython install.py install
-£¨ÖĞ¼äÓĞºÜ³¤µÄÍ£¶Ù£¬°´ÁËÒ»ÏÂ»Ø³µ¼ÌĞø£¬²»È·¶¨ÊÇ·ñÊÇ¸öÀı£©
-¼ÌĞø  >pip install   face_recognition
+æŠŠcmakeçš„è·¯å¾„åŠ å…¥path
+æ‰§è¡Œï¼špython install.py install
+ï¼ˆä¸­é—´æœ‰å¾ˆé•¿çš„åœé¡¿ï¼ŒæŒ‰äº†ä¸€ä¸‹å›è½¦ç»§ç»­ï¼Œä¸ç¡®å®šæ˜¯å¦æ˜¯ä¸ªä¾‹ï¼‰
+ç»§ç»­  >pip install   face_recognition
 ============================================
-ÆäËûÎÊÌâ£º
-²Î¿¼£¨×¢Òâ£¬ÕâÆª²¢²»ÕıÈ·£¬ÕâÆªÖ»ÊÇvsµÄdlib°²×°£©
+å…¶ä»–é—®é¢˜ï¼š
+å‚è€ƒï¼ˆæ³¨æ„ï¼Œè¿™ç¯‡å¹¶ä¸æ­£ç¡®ï¼Œè¿™ç¯‡åªæ˜¯vsçš„dlibå®‰è£…ï¼‰
 https://blog.csdn.net/qq_38880380/article/details/79171229
 
-Èç¹ûÊÇÓÀ¾ÃĞŞ¸Ä¾µÏñÔ´
+å¦‚æœæ˜¯æ°¸ä¹…ä¿®æ”¹é•œåƒæº
 pip install pip -U
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 
-ÒòÎªÕâ¸ö´íÎóµ¼ÖÂ pipÕÒ²»µ½£¬
-¿ÉÒÔÊ×ÏÈÖ´ĞĞ  python -m ensurepip  È»ºóÖ´ĞĞ python -m pip install --upgrade pip  ¼´¿É¸üĞÂÍê±Ï¡£
+å› ä¸ºè¿™ä¸ªé”™è¯¯å¯¼è‡´ pipæ‰¾ä¸åˆ°ï¼Œ
+å¯ä»¥é¦–å…ˆæ‰§è¡Œ  python -m ensurepip  ç„¶åæ‰§è¡Œ python -m pip install --upgrade pip  å³å¯æ›´æ–°å®Œæ¯•ã€‚
 
 pip install face_recognition
 pip install opencv-python
-python3.8 Ö´ĞĞ dlib±¨´íÕÒ²»µ½dll
-Ê¹ÓÃvirtualenv ¼ÓÔØpython3.6»·¾³  virtualenv -p D:\Python\Python36\python.exe --no-site-packages  venv
+python3.8 æ‰§è¡Œ dlibæŠ¥é”™æ‰¾ä¸åˆ°dll
+ä½¿ç”¨virtualenv åŠ è½½python3.6ç¯å¢ƒ  virtualenv -p D:\Python\Python36\python.exe --no-site-packages  venv
 
  .\venv\Scripts\activate 
 
-»òÕß¸É´à°²×°3.6.8 £¡£¡£¡£¡£¡
+æˆ–è€…å¹²è„†å®‰è£…3.6.8 ï¼ï¼ï¼ï¼ï¼
 
 
 

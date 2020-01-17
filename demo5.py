@@ -49,7 +49,7 @@ face_locations = []
 face_encodings = []
 face_names = []
 process_this_frame = True
-frame_pre_count = 1       #检测帧
+frame_pre_count = 4       #检测帧
 frame_size = 0.25          #缩放比率
 
 frame_count = 0
