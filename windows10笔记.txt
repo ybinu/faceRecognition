@@ -1,0 +1,48 @@
+环境：win10   python3.8
+1.下载：
+http://dlib.net/   (我用的是19.19)
+https://cmake.org
+
+2.下载NVIDIA 显卡驱动 cuda cudnn  安装
+一律最新的（CUDA Toolkit 10.2   Download cuDNN v7.6.5 (November 18th, 2019), for CUDA 10.2）
+https://developer.nvidia.com/cuda-downloads?target_os=Windows&target_arch=x86_64&target_version=10&target_type=exelocal
+https://developer.nvidia.com/rdp/cudnn-download
+
+如果cuda安装报错，去掉 取消掉CUDA里Visual Studio Integration前的√
+
+visual studio  这里我用的2019社区版
+安装中  cmake 报错加上  CMake工具和  msbulid
+参考https://www.jianshu.com/p/8ba3401f610b
+
+其他一律无脑下一步
+
+把cmake的路径加入path
+执行：python install.py install
+（中间有很长的停顿，按了一下回车继续，不确定是否是个例）
+继续  >pip install   face_recognition
+============================================
+其他问题：
+参考（注意，这篇并不正确，这篇只是vs的dlib安装）
+https://blog.csdn.net/qq_38880380/article/details/79171229
+
+如果是永久修改镜像源
+pip install pip -U
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+
+因为这个错误导致 pip找不到，
+可以首先执行  python -m ensurepip  然后执行 python -m pip install --upgrade pip  即可更新完毕。
+
+pip install face_recognition
+pip install opencv-python
+python3.8 执行 dlib报错找不到dll
+使用virtualenv 加载python3.6环境  virtualenv -p D:\Python\Python36\python.exe --no-site-packages  venv
+
+ .\venv\Scripts\activate 
+
+或者干脆安装3.6.8 ！！！！！
+
+
+
+
+
+
